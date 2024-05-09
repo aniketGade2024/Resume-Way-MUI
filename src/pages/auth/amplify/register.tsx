@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { AmplifyRegisterView } from 'src/sections/auth/amplify';
+import { AmplifyRegisterView } from '@/sections/auth/amplify';
 
 // ----------------------------------------------------------------------
 

@@ -1,3 +1,5 @@
+import Iconify from '@/components/iconify';
+
 import Box from '@mui/material/Box';
 import Step from '@mui/material/Step';
 import Stack from '@mui/material/Stack';
@@ -5,8 +7,6 @@ import { styled } from '@mui/material/styles';
 import Stepper, { StepperProps } from '@mui/material/Stepper';
 import StepLabel, { stepLabelClasses } from '@mui/material/StepLabel';
 import MuiStepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
-
-import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

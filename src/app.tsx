@@ -1,30 +1,30 @@
 /* eslint-disable perfectionist/sort-imports */
-import 'src/global.css';
+import '@/global.css';
 
 // i18n
-import 'src/locales/i18n';
+import '@/locales/i18n';
 
 // ----------------------------------------------------------------------
 
-import Router from 'src/routes/sections';
+import Router from '@/routes/sections';
 
-import { useScrollToTop } from 'src/hooks/use-scroll-to-top';
+import { useScrollToTop } from '@/hooks/use-scroll-to-top';
 
-import ThemeProvider from 'src/theme';
-import { LocalizationProvider } from 'src/locales';
+import ThemeProvider from '@/theme';
+import { LocalizationProvider } from '@/locales';
 
-import ProgressBar from 'src/components/progress-bar';
-import { MotionLazy } from 'src/components/animate/motion-lazy';
-import SnackbarProvider from 'src/components/snackbar/snackbar-provider';
-import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
+import ProgressBar from '@/components/progress-bar';
+import { MotionLazy } from '@/components/animate/motion-lazy';
+import SnackbarProvider from '@/components/snackbar/snackbar-provider';
+import { SettingsDrawer, SettingsProvider } from '@/components/settings';
 
-import { CheckoutProvider } from 'src/sections/checkout/context';
+import { CheckoutProvider } from '@/sections/checkout/context';
 
-import { AuthProvider } from 'src/auth/context/jwt';
-// import { AuthProvider } from 'src/auth/context/auth0';
-// import { AuthProvider } from 'src/auth/context/amplify';
-// import { AuthProvider } from 'src/auth/context/firebase';
-// import { AuthProvider } from 'src/auth/context/supabase';
+import { AuthProvider } from '@/auth/context/jwt';
+// import { AuthProvider } from '@/auth/context/auth0';
+// import { AuthProvider } from '@/auth/context/amplify';
+// import { AuthProvider } from '@/auth/context/firebase';
+// import { AuthProvider } from '@/auth/context/supabase';
 
 // ----------------------------------------------------------------------
 

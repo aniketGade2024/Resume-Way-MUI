@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import BreadcrumbsView from 'src/sections/_examples/mui/breadcrumbs-view';
+import BreadcrumbsView from '@/sections/_examples/mui/breadcrumbs-view';
 
 // ----------------------------------------------------------------------
 

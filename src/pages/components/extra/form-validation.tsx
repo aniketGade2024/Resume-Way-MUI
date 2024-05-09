@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import FormValidationView from 'src/sections/_examples/extra/form-validation-view';
+import FormValidationView from '@/sections/_examples/extra/form-validation-view';
 
 // ----------------------------------------------------------------------
 

@@ -1,14 +1,13 @@
 import { m } from 'framer-motion';
+import Image from '@/components/image';
+import { varFade, MotionContainer } from '@/components/animate';
+import Carousel, { useCarousel, CarouselDots, CarouselArrows } from '@/components/carousel';
 
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Card, { CardProps } from '@mui/material/Card';
 import { alpha, useTheme } from '@mui/material/styles';
-
-import Image from 'src/components/image';
-import { varFade, MotionContainer } from 'src/components/animate';
-import Carousel, { useCarousel, CarouselDots, CarouselArrows } from 'src/components/carousel';
 
 // ----------------------------------------------------------------------
 
@@ -70,9 +69,8 @@ function CarouselItem({ item, active }: CarouselItemProps) {
     <Image
       alt={title}
       src={coverUrl}
-      overlay={`linear-gradient(to bottom, ${alpha(theme.palette.grey[900], 0)} 0%, ${
-        theme.palette.grey[900]
-      } 75%)`}
+      overlay={`linear-gradient(to bottom, ${alpha(theme.palette.grey[900], 0)} 0%, ${theme.palette.grey[900]
+        } 75%)`}
       sx={{
         width: 1,
         height: {

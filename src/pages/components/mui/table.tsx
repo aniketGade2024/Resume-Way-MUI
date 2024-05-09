@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import TableView from 'src/sections/_examples/mui/table-view';
+import TableView from '@/sections/_examples/mui/table-view';
 
 // ----------------------------------------------------------------------
 

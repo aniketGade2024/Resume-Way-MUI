@@ -1,13 +1,11 @@
+import { paths } from '@/routes/paths';
 import { useState, useCallback } from 'react';
+import CustomBreadcrumbs from '@/components/custom-breadcrumbs';
 
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Container from '@mui/material/Container';
-
-import { paths } from 'src/routes/paths';
-
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 import Textfields from './textfield';
 

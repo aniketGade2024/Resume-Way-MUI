@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import WalktourView from 'src/sections/_examples/extra/walktour-view';
+import WalktourView from '@/sections/_examples/extra/walktour-view';
 
 // ----------------------------------------------------------------------
 

@@ -1,15 +1,13 @@
 import { useMemo } from 'react';
 import keyBy from 'lodash/keyBy';
 import useSWR, { mutate } from 'swr';
-
-import axios, { fetcher, endpoints } from 'src/utils/axios';
-
+import axios, { fetcher, endpoints } from '@/utils/axios';
 import {
   IChatMessage,
   IChatParticipant,
   IChatConversation,
   IChatConversations,
-} from 'src/types/chat';
+} from '@/types/chat';
 
 // ----------------------------------------------------------------------
 
@@ -136,9 +134,9 @@ export async function sendMessage(conversationId: string, messageData: IChatMess
         (conversation: IChatConversation) =>
           conversation.id === conversationId
             ? {
-                ...conversation,
-                messages: [...conversation.messages, messageData],
-              }
+              ...conversation,
+              messages: [...conversation.messages, messageData],
+            }
             : conversation
       );
 

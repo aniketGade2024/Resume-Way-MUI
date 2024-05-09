@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import AvatarView from 'src/sections/_examples/mui/avatar-view';
+import AvatarView from '@/sections/_examples/mui/avatar-view';
 
 // ----------------------------------------------------------------------
 

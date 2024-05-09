@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { FirebaseVerifyView } from 'src/sections/auth/firebase';
+import { FirebaseVerifyView } from '@/sections/auth/firebase';
 
 // ----------------------------------------------------------------------
 

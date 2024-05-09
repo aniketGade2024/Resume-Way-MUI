@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { ClassicRegisterView } from 'src/sections/auth-demo/classic';
+import { ClassicRegisterView } from '@/sections/auth-demo/classic';
 
 // ----------------------------------------------------------------------
 

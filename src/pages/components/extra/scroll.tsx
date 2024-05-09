@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import ScrollView from 'src/sections/_examples/extra/scroll-view';
+import ScrollView from '@/sections/_examples/extra/scroll-view';
 
 // ----------------------------------------------------------------------
 

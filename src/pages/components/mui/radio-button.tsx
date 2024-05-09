@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import RadioButtonView from 'src/sections/_examples/mui/radio-button-view';
+import RadioButtonView from '@/sections/_examples/mui/radio-button-view';
 
 // ----------------------------------------------------------------------
 

@@ -1,15 +1,13 @@
+import { useMockedUser } from '@/hooks/use-mocked-user';
+import { SeoIllustration } from '@/assets/illustrations';
+import { useSettingsContext } from '@/components/settings';
+import { _appAuthors, _appRelated, _appFeatured, _appInvoices, _appInstalled } from '@/_mock';
+
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
-
-import { useMockedUser } from 'src/hooks/use-mocked-user';
-
-import { SeoIllustration } from 'src/assets/illustrations';
-import { _appAuthors, _appRelated, _appFeatured, _appInvoices, _appInstalled } from 'src/_mock';
-
-import { useSettingsContext } from 'src/components/settings';
 
 import AppWidget from '../app-widget';
 import AppWelcome from '../app-welcome';

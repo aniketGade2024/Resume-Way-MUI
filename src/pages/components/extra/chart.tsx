@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import ChartView from 'src/sections/_examples/extra/chart-view';
+import ChartView from '@/sections/_examples/extra/chart-view';
 
 // ----------------------------------------------------------------------
 

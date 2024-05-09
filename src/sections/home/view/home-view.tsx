@@ -1,9 +1,8 @@
 import { useScroll } from 'framer-motion';
+import ScrollProgress from '@/components/scroll-progress';
 
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
-
-import ScrollProgress from 'src/components/scroll-progress';
 
 import HomeHero from '../home-hero';
 import HomeMinimal from '../home-minimal';

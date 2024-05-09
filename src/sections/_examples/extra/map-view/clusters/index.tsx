@@ -1,7 +1,6 @@
 import { memo, useRef } from 'react';
+import { MapBoxProps } from '@/components/map';
 import Map, { Layer, Source, MapRef, LngLatLike, MapLayerMouseEvent } from 'react-map-gl';
-
-import { MapBoxProps } from 'src/components/map';
 
 import { clusterLayer, clusterCountLayer, unclusteredPointLayer } from './layers';
 

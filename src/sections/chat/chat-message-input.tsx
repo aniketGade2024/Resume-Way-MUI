@@ -1,22 +1,16 @@
 import { sub } from 'date-fns';
+import uuidv4 from '@/utils/uuidv4';
+import { paths } from '@/routes/paths';
+import { useRouter } from '@/routes/hooks';
+import Iconify from '@/components/iconify';
+import { IChatParticipant } from '@/types/chat';
+import { useMockedUser } from '@/hooks/use-mocked-user';
+import { sendMessage, createConversation } from '@/api/chat';
 import { useRef, useMemo, useState, useCallback } from 'react';
 
 import Stack from '@mui/material/Stack';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
-
-import { paths } from 'src/routes/paths';
-import { useRouter } from 'src/routes/hooks';
-
-import { useMockedUser } from 'src/hooks/use-mocked-user';
-
-import uuidv4 from 'src/utils/uuidv4';
-
-import { sendMessage, createConversation } from 'src/api/chat';
-
-import Iconify from 'src/components/iconify';
-
-import { IChatParticipant } from 'src/types/chat';
 
 // ----------------------------------------------------------------------
 

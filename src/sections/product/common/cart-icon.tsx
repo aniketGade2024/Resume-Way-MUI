@@ -1,10 +1,9 @@
+import { paths } from '@/routes/paths';
+import Iconify from '@/components/iconify';
+import { RouterLink } from '@/routes/components';
+
 import Box from '@mui/material/Box';
 import Badge from '@mui/material/Badge';
-
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
-
-import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

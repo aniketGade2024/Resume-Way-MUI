@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import ListView from 'src/sections/_examples/mui/list-view';
+import ListView from '@/sections/_examples/mui/list-view';
 
 // ----------------------------------------------------------------------
 

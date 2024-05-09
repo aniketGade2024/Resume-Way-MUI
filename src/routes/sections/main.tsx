@@ -1,32 +1,30 @@
 import { lazy, Suspense } from 'react';
+import MainLayout from '@/layouts/main';
 import { Outlet } from 'react-router-dom';
-
-import MainLayout from 'src/layouts/main';
-import SimpleLayout from 'src/layouts/simple';
-import CompactLayout from 'src/layouts/compact';
-
-import { SplashScreen } from 'src/components/loading-screen';
+import SimpleLayout from '@/layouts/simple';
+import CompactLayout from '@/layouts/compact';
+import { SplashScreen } from '@/components/loading-screen';
 
 // ----------------------------------------------------------------------
 
-export const HomePage = lazy(() => import('src/pages/home'));
-const Page500 = lazy(() => import('src/pages/500'));
-const Page403 = lazy(() => import('src/pages/403'));
-const Page404 = lazy(() => import('src/pages/404'));
-const FaqsPage = lazy(() => import('src/pages/faqs'));
-const AboutPage = lazy(() => import('src/pages/about-us'));
-const ContactPage = lazy(() => import('src/pages/contact-us'));
-const PricingPage = lazy(() => import('src/pages/pricing'));
-const PaymentPage = lazy(() => import('src/pages/payment'));
-const ComingSoonPage = lazy(() => import('src/pages/coming-soon'));
-const MaintenancePage = lazy(() => import('src/pages/maintenance'));
+export const HomePage = lazy(() => import('@/pages/home'));
+const Page500 = lazy(() => import('@/pages/500'));
+const Page403 = lazy(() => import('@/pages/403'));
+const Page404 = lazy(() => import('@/pages/404'));
+const FaqsPage = lazy(() => import('@/pages/faqs'));
+const AboutPage = lazy(() => import('@/pages/about-us'));
+const ContactPage = lazy(() => import('@/pages/contact-us'));
+const PricingPage = lazy(() => import('@/pages/pricing'));
+const PaymentPage = lazy(() => import('@/pages/payment'));
+const ComingSoonPage = lazy(() => import('@/pages/coming-soon'));
+const MaintenancePage = lazy(() => import('@/pages/maintenance'));
 // PRODUCT
-const ProductListPage = lazy(() => import('src/pages/product/list'));
-const ProductDetailsPage = lazy(() => import('src/pages/product/details'));
-const ProductCheckoutPage = lazy(() => import('src/pages/product/checkout'));
+const ProductListPage = lazy(() => import('@/pages/product/list'));
+const ProductDetailsPage = lazy(() => import('@/pages/product/details'));
+const ProductCheckoutPage = lazy(() => import('@/pages/product/checkout'));
 // BLOG
-const PostListPage = lazy(() => import('src/pages/post/list'));
-const PostDetailsPage = lazy(() => import('src/pages/post/details'));
+const PostListPage = lazy(() => import('@/pages/post/list'));
+const PostDetailsPage = lazy(() => import('@/pages/post/details'));
 
 // ----------------------------------------------------------------------
 

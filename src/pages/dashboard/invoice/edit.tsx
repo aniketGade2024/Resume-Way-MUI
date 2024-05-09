@@ -1,8 +1,6 @@
+import { useParams } from '@/routes/hooks';
 import { Helmet } from 'react-helmet-async';
-
-import { useParams } from 'src/routes/hooks';
-
-import { InvoiceEditView } from 'src/sections/invoice/view';
+import { InvoiceEditView } from '@/sections/invoice/view';
 
 // ----------------------------------------------------------------------
 

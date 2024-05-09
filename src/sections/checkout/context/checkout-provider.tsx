@@ -1,15 +1,11 @@
 import uniq from 'lodash/uniq';
+import { paths } from '@/routes/paths';
+import { useRouter } from '@/routes/hooks';
+import { IAddressItem } from '@/types/address';
+import { ICheckoutItem } from '@/types/checkout';
 import { useMemo, useEffect, useCallback } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { useRouter } from 'src/routes/hooks';
-
-import { getStorage, useLocalStorage } from 'src/hooks/use-local-storage';
-
-import { PRODUCT_CHECKOUT_STEPS } from 'src/_mock/_product';
-
-import { IAddressItem } from 'src/types/address';
-import { ICheckoutItem } from 'src/types/checkout';
+import { PRODUCT_CHECKOUT_STEPS } from '@/_mock/_product';
+import { getStorage, useLocalStorage } from '@/hooks/use-local-storage';
 
 import { CheckoutContext } from './checkout-context';
 

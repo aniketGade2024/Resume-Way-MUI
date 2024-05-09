@@ -1,41 +1,39 @@
 import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-
-import { GuestGuard } from 'src/auth/guard';
-import CompactLayout from 'src/layouts/compact';
-import AuthClassicLayout from 'src/layouts/auth/classic';
-
-import { SplashScreen } from 'src/components/loading-screen';
+import { GuestGuard } from '@/auth/guard';
+import CompactLayout from '@/layouts/compact';
+import AuthClassicLayout from '@/layouts/auth/classic';
+import { SplashScreen } from '@/components/loading-screen';
 
 // ----------------------------------------------------------------------
 
 // AMPLIFY
-const AmplifyLoginPage = lazy(() => import('src/pages/auth/amplify/login'));
-const AmplifyRegisterPage = lazy(() => import('src/pages/auth/amplify/register'));
-const AmplifyVerifyPage = lazy(() => import('src/pages/auth/amplify/verify'));
-const AmplifyNewPasswordPage = lazy(() => import('src/pages/auth/amplify/new-password'));
-const AmplifyForgotPasswordPage = lazy(() => import('src/pages/auth/amplify/forgot-password'));
+const AmplifyLoginPage = lazy(() => import('@/pages/auth/amplify/login'));
+const AmplifyRegisterPage = lazy(() => import('@/pages/auth/amplify/register'));
+const AmplifyVerifyPage = lazy(() => import('@/pages/auth/amplify/verify'));
+const AmplifyNewPasswordPage = lazy(() => import('@/pages/auth/amplify/new-password'));
+const AmplifyForgotPasswordPage = lazy(() => import('@/pages/auth/amplify/forgot-password'));
 
 // JWT
-const JwtLoginPage = lazy(() => import('src/pages/auth/jwt/login'));
-const JwtRegisterPage = lazy(() => import('src/pages/auth/jwt/register'));
+const JwtLoginPage = lazy(() => import('@/pages/auth/jwt/login'));
+const JwtRegisterPage = lazy(() => import('@/pages/auth/jwt/register'));
 
 // FIREBASE
-const FirebaseLoginPage = lazy(() => import('src/pages/auth/firebase/login'));
-const FirebaseRegisterPage = lazy(() => import('src/pages/auth/firebase/register'));
-const FirebaseVerifyPage = lazy(() => import('src/pages/auth/firebase/verify'));
-const FirebaseForgotPasswordPage = lazy(() => import('src/pages/auth/firebase/forgot-password'));
+const FirebaseLoginPage = lazy(() => import('@/pages/auth/firebase/login'));
+const FirebaseRegisterPage = lazy(() => import('@/pages/auth/firebase/register'));
+const FirebaseVerifyPage = lazy(() => import('@/pages/auth/firebase/verify'));
+const FirebaseForgotPasswordPage = lazy(() => import('@/pages/auth/firebase/forgot-password'));
 
 // AUTH0
-const Auth0LoginPage = lazy(() => import('src/pages/auth/auth0/login'));
-const Auth0Callback = lazy(() => import('src/pages/auth/auth0/callback'));
+const Auth0LoginPage = lazy(() => import('@/pages/auth/auth0/login'));
+const Auth0Callback = lazy(() => import('@/pages/auth/auth0/callback'));
 
 // SUPABASE
-const SupabaseLoginPage = lazy(() => import('src/pages/auth/supabase/login'));
-const SupabaseVerifyPage = lazy(() => import('src/pages/auth/supabase/verify'));
-const SupabaseRegisterPage = lazy(() => import('src/pages/auth/supabase/register'));
-const SupabaseNewPasswordPage = lazy(() => import('src/pages/auth/supabase/new-password'));
-const SupabaseForgotPasswordPage = lazy(() => import('src/pages/auth/supabase/forgot-password'));
+const SupabaseLoginPage = lazy(() => import('@/pages/auth/supabase/login'));
+const SupabaseVerifyPage = lazy(() => import('@/pages/auth/supabase/verify'));
+const SupabaseRegisterPage = lazy(() => import('@/pages/auth/supabase/register'));
+const SupabaseNewPasswordPage = lazy(() => import('@/pages/auth/supabase/new-password'));
+const SupabaseForgotPasswordPage = lazy(() => import('@/pages/auth/supabase/forgot-password'));
 
 // ----------------------------------------------------------------------
 

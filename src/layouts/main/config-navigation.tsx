@@ -1,8 +1,6 @@
-import { paths } from 'src/routes/paths';
-
-import { PATH_AFTER_LOGIN } from 'src/config-global';
-
-import Iconify from 'src/components/iconify';
+import { paths } from '@/routes/paths';
+import Iconify from '@/components/iconify';
+import { PATH_AFTER_LOGIN } from '@/config-global';
 
 // ----------------------------------------------------------------------
 

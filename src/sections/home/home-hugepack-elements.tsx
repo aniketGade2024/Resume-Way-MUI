@@ -1,5 +1,12 @@
+import { _mock } from '@/_mock';
 import { m } from 'framer-motion';
+import { paths } from '@/routes/paths';
+import Label from '@/components/label';
+import Image from '@/components/image';
+import Iconify from '@/components/iconify';
 import { useState, useCallback } from 'react';
+import { useResponsive } from '@/hooks/use-responsive';
+import { varFade, MotionViewport } from '@/components/animate';
 
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
@@ -31,17 +38,6 @@ import ToggleButton from '@mui/material/ToggleButton';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-
-import { paths } from 'src/routes/paths';
-
-import { useResponsive } from 'src/hooks/use-responsive';
-
-import { _mock } from 'src/_mock';
-
-import Label from 'src/components/label';
-import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
-import { varFade, MotionViewport } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 
@@ -229,7 +225,7 @@ export default function HomeHugePackElements() {
           <Chip
             color="error"
             variant="soft"
-            onDelete={() => {}}
+            onDelete={() => { }}
             avatar={<Avatar alt={_mock.fullName(2)} src={_mock.image.avatar(2)} />}
             label="Chip"
           />
@@ -296,7 +292,7 @@ export default function HomeHugePackElements() {
         </m.div>
 
         <m.div variants={varFade().in}>
-          <Alert severity="success" onClose={() => {}}>
+          <Alert severity="success" onClose={() => { }}>
             <AlertTitle>Success</AlertTitle>
             This is a success alert — <strong>check it out!</strong>
           </Alert>

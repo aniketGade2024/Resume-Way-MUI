@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import TransferListView from 'src/sections/_examples/mui/transfer-list-view';
+import TransferListView from '@/sections/_examples/mui/transfer-list-view';
 
 // ----------------------------------------------------------------------
 

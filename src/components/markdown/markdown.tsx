@@ -1,5 +1,5 @@
 /* eslint-disable perfectionist/sort-imports */
-import 'src/utils/highlight';
+import '@/utils/highlight';
 
 // markdown plugins
 import rehypeRaw from 'rehype-raw';
@@ -9,7 +9,7 @@ import rehypeHighlight from 'rehype-highlight';
 
 import Link from '@mui/material/Link';
 
-import { RouterLink } from 'src/routes/components';
+import { RouterLink } from '@/routes/components';
 
 import Image from '../image';
 import StyledMarkdown from './styles';

@@ -1,11 +1,9 @@
+import { _invoices } from '@/_mock';
+import { paths } from '@/routes/paths';
+import { useSettingsContext } from '@/components/settings';
+import CustomBreadcrumbs from '@/components/custom-breadcrumbs';
+
 import Container from '@mui/material/Container';
-
-import { paths } from 'src/routes/paths';
-
-import { _invoices } from 'src/_mock';
-
-import { useSettingsContext } from 'src/components/settings';
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 import InvoiceNewEditForm from '../invoice-new-edit-form';
 

@@ -1,28 +1,26 @@
 import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-
-import CompactLayout from 'src/layouts/compact';
-import AuthModernLayout from 'src/layouts/auth/modern';
-import AuthClassicLayout from 'src/layouts/auth/classic';
-import AuthModernCompactLayout from 'src/layouts/auth/modern-compact';
-
-import { SplashScreen } from 'src/components/loading-screen';
+import CompactLayout from '@/layouts/compact';
+import AuthModernLayout from '@/layouts/auth/modern';
+import AuthClassicLayout from '@/layouts/auth/classic';
+import { SplashScreen } from '@/components/loading-screen';
+import AuthModernCompactLayout from '@/layouts/auth/modern-compact';
 
 // ----------------------------------------------------------------------
 
 // CLASSIC
-const LoginClassicPage = lazy(() => import('src/pages/auth-demo/classic/login'));
-const RegisterClassicPage = lazy(() => import('src/pages/auth-demo/classic/register'));
-const ForgotPasswordClassicPage = lazy(() => import('src/pages/auth-demo/classic/forgot-password'));
-const VerifyClassicPage = lazy(() => import('src/pages/auth-demo/classic/verify'));
-const NewPasswordClassicPage = lazy(() => import('src/pages/auth-demo/classic/new-password'));
+const LoginClassicPage = lazy(() => import('@/pages/auth-demo/classic/login'));
+const RegisterClassicPage = lazy(() => import('@/pages/auth-demo/classic/register'));
+const ForgotPasswordClassicPage = lazy(() => import('@/pages/auth-demo/classic/forgot-password'));
+const VerifyClassicPage = lazy(() => import('@/pages/auth-demo/classic/verify'));
+const NewPasswordClassicPage = lazy(() => import('@/pages/auth-demo/classic/new-password'));
 
 // MODERN
-const LoginModernPage = lazy(() => import('src/pages/auth-demo/modern/login'));
-const RegisterModernPage = lazy(() => import('src/pages/auth-demo/modern/register'));
-const ForgotPasswordModernPage = lazy(() => import('src/pages/auth-demo/modern/forgot-password'));
-const VerifyModernPage = lazy(() => import('src/pages/auth-demo/modern/verify'));
-const NewPasswordModernPage = lazy(() => import('src/pages/auth-demo/modern/new-password'));
+const LoginModernPage = lazy(() => import('@/pages/auth-demo/modern/login'));
+const RegisterModernPage = lazy(() => import('@/pages/auth-demo/modern/register'));
+const ForgotPasswordModernPage = lazy(() => import('@/pages/auth-demo/modern/forgot-password'));
+const VerifyModernPage = lazy(() => import('@/pages/auth-demo/modern/verify'));
+const NewPasswordModernPage = lazy(() => import('@/pages/auth-demo/modern/new-password'));
 
 // ----------------------------------------------------------------------
 

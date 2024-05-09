@@ -1,19 +1,15 @@
+import { paths } from '@/routes/paths';
+import Iconify from '@/components/iconify';
 import { useState, useCallback } from 'react';
+import { useMockedUser } from '@/hooks/use-mocked-user';
+import { useSettingsContext } from '@/components/settings';
+import CustomBreadcrumbs from '@/components/custom-breadcrumbs';
+import { _userAbout, _userFeeds, _userFriends, _userGallery, _userFollowers } from '@/_mock';
 
 import Tab from '@mui/material/Tab';
 import Card from '@mui/material/Card';
 import Container from '@mui/material/Container';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
-
-import { paths } from 'src/routes/paths';
-
-import { useMockedUser } from 'src/hooks/use-mocked-user';
-
-import { _userAbout, _userFeeds, _userFriends, _userGallery, _userFollowers } from 'src/_mock';
-
-import Iconify from 'src/components/iconify';
-import { useSettingsContext } from 'src/components/settings';
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 import ProfileHome from '../profile-home';
 import ProfileCover from '../profile-cover';

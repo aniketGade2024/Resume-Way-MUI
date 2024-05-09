@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import DialogView from 'src/sections/_examples/mui/dialog-view';
+import DialogView from '@/sections/_examples/mui/dialog-view';
 
 // ----------------------------------------------------------------------
 

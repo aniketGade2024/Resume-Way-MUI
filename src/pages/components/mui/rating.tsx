@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import RatingView from 'src/sections/_examples/mui/rating-view';
+import RatingView from '@/sections/_examples/mui/rating-view';
 
 // ----------------------------------------------------------------------
 

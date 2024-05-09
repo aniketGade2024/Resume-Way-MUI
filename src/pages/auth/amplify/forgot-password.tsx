@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { AmplifyForgotPasswordView } from 'src/sections/auth/amplify';
+import { AmplifyForgotPasswordView } from '@/sections/auth/amplify';
 
 // ----------------------------------------------------------------------
 

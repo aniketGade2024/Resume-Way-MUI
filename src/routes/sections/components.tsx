@@ -1,73 +1,71 @@
 import { lazy, Suspense } from 'react';
+import MainLayout from '@/layouts/main';
 import { Outlet, Navigate } from 'react-router-dom';
-
-import MainLayout from 'src/layouts/main';
-
-import { SplashScreen } from 'src/components/loading-screen';
+import { SplashScreen } from '@/components/loading-screen';
 
 // ----------------------------------------------------------------------
 
-const IndexPage = lazy(() => import('src/pages/components'));
+const IndexPage = lazy(() => import('@/pages/components'));
 
 // FOUNDATION
-const ColorsPage = lazy(() => import('src/pages/components/foundation/colors'));
-const TypographyPage = lazy(() => import('src/pages/components/foundation/typography'));
-const ShadowsPage = lazy(() => import('src/pages/components/foundation/shadows'));
-const GridPage = lazy(() => import('src/pages/components/foundation/grid'));
-const IconsPage = lazy(() => import('src/pages/components/foundation/icons'));
+const ColorsPage = lazy(() => import('@/pages/components/foundation/colors'));
+const TypographyPage = lazy(() => import('@/pages/components/foundation/typography'));
+const ShadowsPage = lazy(() => import('@/pages/components/foundation/shadows'));
+const GridPage = lazy(() => import('@/pages/components/foundation/grid'));
+const IconsPage = lazy(() => import('@/pages/components/foundation/icons'));
 
 // MUI COMPONENTS
-const AccordionPage = lazy(() => import('src/pages/components/mui/accordion'));
-const AlertPage = lazy(() => import('src/pages/components/mui/alert'));
-const AutocompletePage = lazy(() => import('src/pages/components/mui/autocomplete'));
-const AvatarPage = lazy(() => import('src/pages/components/mui/avatar'));
-const BadgePage = lazy(() => import('src/pages/components/mui/badge'));
-const BreadcrumbsPage = lazy(() => import('src/pages/components/mui/breadcrumbs'));
-const ButtonsPage = lazy(() => import('src/pages/components/mui/buttons'));
-const CheckboxPage = lazy(() => import('src/pages/components/mui/checkbox'));
-const ChipPage = lazy(() => import('src/pages/components/mui/chip'));
-const DataGridPage = lazy(() => import('src/pages/components/mui/data-grid'));
-const DialogPage = lazy(() => import('src/pages/components/mui/dialog'));
-const ListPage = lazy(() => import('src/pages/components/mui/list'));
-const MenuPage = lazy(() => import('src/pages/components/mui/menu'));
-const PaginationPage = lazy(() => import('src/pages/components/mui/pagination'));
-const PickersPage = lazy(() => import('src/pages/components/mui/pickers'));
-const PopoverPage = lazy(() => import('src/pages/components/mui/popover'));
-const ProgressPage = lazy(() => import('src/pages/components/mui/progress'));
-const RadioButtonsPage = lazy(() => import('src/pages/components/mui/radio-button'));
-const RatingPage = lazy(() => import('src/pages/components/mui/rating'));
-const SliderPage = lazy(() => import('src/pages/components/mui/slider'));
-const StepperPage = lazy(() => import('src/pages/components/mui/stepper'));
-const SwitchPage = lazy(() => import('src/pages/components/mui/switch'));
-const TablePage = lazy(() => import('src/pages/components/mui/table'));
-const TabsPage = lazy(() => import('src/pages/components/mui/tabs'));
-const TextFieldPage = lazy(() => import('src/pages/components/mui/textfield'));
-const TimelinePage = lazy(() => import('src/pages/components/mui/timeline'));
-const TooltipPage = lazy(() => import('src/pages/components/mui/tooltip'));
-const TransferListPage = lazy(() => import('src/pages/components/mui/transfer-list'));
+const AccordionPage = lazy(() => import('@/pages/components/mui/accordion'));
+const AlertPage = lazy(() => import('@/pages/components/mui/alert'));
+const AutocompletePage = lazy(() => import('@/pages/components/mui/autocomplete'));
+const AvatarPage = lazy(() => import('@/pages/components/mui/avatar'));
+const BadgePage = lazy(() => import('@/pages/components/mui/badge'));
+const BreadcrumbsPage = lazy(() => import('@/pages/components/mui/breadcrumbs'));
+const ButtonsPage = lazy(() => import('@/pages/components/mui/buttons'));
+const CheckboxPage = lazy(() => import('@/pages/components/mui/checkbox'));
+const ChipPage = lazy(() => import('@/pages/components/mui/chip'));
+const DataGridPage = lazy(() => import('@/pages/components/mui/data-grid'));
+const DialogPage = lazy(() => import('@/pages/components/mui/dialog'));
+const ListPage = lazy(() => import('@/pages/components/mui/list'));
+const MenuPage = lazy(() => import('@/pages/components/mui/menu'));
+const PaginationPage = lazy(() => import('@/pages/components/mui/pagination'));
+const PickersPage = lazy(() => import('@/pages/components/mui/pickers'));
+const PopoverPage = lazy(() => import('@/pages/components/mui/popover'));
+const ProgressPage = lazy(() => import('@/pages/components/mui/progress'));
+const RadioButtonsPage = lazy(() => import('@/pages/components/mui/radio-button'));
+const RatingPage = lazy(() => import('@/pages/components/mui/rating'));
+const SliderPage = lazy(() => import('@/pages/components/mui/slider'));
+const StepperPage = lazy(() => import('@/pages/components/mui/stepper'));
+const SwitchPage = lazy(() => import('@/pages/components/mui/switch'));
+const TablePage = lazy(() => import('@/pages/components/mui/table'));
+const TabsPage = lazy(() => import('@/pages/components/mui/tabs'));
+const TextFieldPage = lazy(() => import('@/pages/components/mui/textfield'));
+const TimelinePage = lazy(() => import('@/pages/components/mui/timeline'));
+const TooltipPage = lazy(() => import('@/pages/components/mui/tooltip'));
+const TransferListPage = lazy(() => import('@/pages/components/mui/transfer-list'));
 
 // EXTRA COMPONENTS
-const AnimatePage = lazy(() => import('src/pages/components/extra/animate'));
-const CarouselsPage = lazy(() => import('src/pages/components/extra/carousel'));
-const ChartPage = lazy(() => import('src/pages/components/extra/chart'));
-const CopyToClipboardPage = lazy(() => import('src/pages/components/extra/copy-to-clipboard'));
-const EditorPage = lazy(() => import('src/pages/components/extra/editor'));
-const FormValidationPage = lazy(() => import('src/pages/components/extra/form-validation'));
-const ImagePage = lazy(() => import('src/pages/components/extra/image'));
-const LabelPage = lazy(() => import('src/pages/components/extra/label'));
-const LightboxPage = lazy(() => import('src/pages/components/extra/lightbox'));
-const MapPage = lazy(() => import('src/pages/components/extra/map'));
-const MegaMenuPage = lazy(() => import('src/pages/components/extra/mega-menu'));
-const MultiLanguagePage = lazy(() => import('src/pages/components/extra/multi-language'));
-const NavigationBarPage = lazy(() => import('src/pages/components/extra/navigation-bar'));
-const OrganizationalChartPage = lazy(() => import('src/pages/components/extra/organization-chart'));
-const ScrollbarPage = lazy(() => import('src/pages/components/extra/scroll'));
-const SnackbarPage = lazy(() => import('src/pages/components/extra/snackbar'));
-const TextMaxLinePage = lazy(() => import('src/pages/components/extra/text-max-line'));
-const UploadPage = lazy(() => import('src/pages/components/extra/upload'));
-const MarkdownPage = lazy(() => import('src/pages/components/extra/markdown'));
-const ScrollProgressPage = lazy(() => import('src/pages/components/extra/scroll-progress'));
-const WalktourPage = lazy(() => import('src/pages/components/extra/walktour'));
+const AnimatePage = lazy(() => import('@/pages/components/extra/animate'));
+const CarouselsPage = lazy(() => import('@/pages/components/extra/carousel'));
+const ChartPage = lazy(() => import('@/pages/components/extra/chart'));
+const CopyToClipboardPage = lazy(() => import('@/pages/components/extra/copy-to-clipboard'));
+const EditorPage = lazy(() => import('@/pages/components/extra/editor'));
+const FormValidationPage = lazy(() => import('@/pages/components/extra/form-validation'));
+const ImagePage = lazy(() => import('@/pages/components/extra/image'));
+const LabelPage = lazy(() => import('@/pages/components/extra/label'));
+const LightboxPage = lazy(() => import('@/pages/components/extra/lightbox'));
+const MapPage = lazy(() => import('@/pages/components/extra/map'));
+const MegaMenuPage = lazy(() => import('@/pages/components/extra/mega-menu'));
+const MultiLanguagePage = lazy(() => import('@/pages/components/extra/multi-language'));
+const NavigationBarPage = lazy(() => import('@/pages/components/extra/navigation-bar'));
+const OrganizationalChartPage = lazy(() => import('@/pages/components/extra/organization-chart'));
+const ScrollbarPage = lazy(() => import('@/pages/components/extra/scroll'));
+const SnackbarPage = lazy(() => import('@/pages/components/extra/snackbar'));
+const TextMaxLinePage = lazy(() => import('@/pages/components/extra/text-max-line'));
+const UploadPage = lazy(() => import('@/pages/components/extra/upload'));
+const MarkdownPage = lazy(() => import('@/pages/components/extra/markdown'));
+const ScrollProgressPage = lazy(() => import('@/pages/components/extra/scroll-progress'));
+const WalktourPage = lazy(() => import('@/pages/components/extra/walktour'));
 
 // ----------------------------------------------------------------------
 
