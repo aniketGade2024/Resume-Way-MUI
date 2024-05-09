@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { FirebaseRegisterView } from 'src/sections/auth/firebase';
+import { FirebaseRegisterView } from '@/sections/auth/firebase';
 
 // ----------------------------------------------------------------------
 

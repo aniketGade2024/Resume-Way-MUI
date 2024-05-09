@@ -1,4 +1,7 @@
+import { bgGradient } from '@/theme/css';
+import Iconify from '@/components/iconify';
 import { m, MotionProps } from 'framer-motion';
+import { varFade, MotionContainer } from '@/components/animate';
 
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
@@ -7,11 +10,6 @@ import Box, { BoxProps } from '@mui/material/Box';
 import { alpha, useTheme } from '@mui/material/styles';
 import InputAdornment from '@mui/material/InputAdornment';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
-
-import { bgGradient } from 'src/theme/css';
-
-import Iconify from 'src/components/iconify';
-import { varFade, MotionContainer } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 

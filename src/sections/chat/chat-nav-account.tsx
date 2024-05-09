@@ -1,4 +1,7 @@
+import Iconify from '@/components/iconify';
 import { useState, useCallback } from 'react';
+import { useMockedUser } from '@/hooks/use-mocked-user';
+import CustomPopover, { usePopover } from '@/components/custom-popover';
 
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
@@ -10,11 +13,6 @@ import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
 import Badge, { badgeClasses } from '@mui/material/Badge';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-
-import { useMockedUser } from 'src/hooks/use-mocked-user';
-
-import Iconify from 'src/components/iconify';
-import CustomPopover, { usePopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

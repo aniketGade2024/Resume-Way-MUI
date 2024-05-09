@@ -1,3 +1,10 @@
+import { _socials } from '@/_mock';
+import Logo from '@/components/logo';
+import { paths } from '@/routes/paths';
+import Iconify from '@/components/iconify';
+import { usePathname } from '@/routes/hooks';
+import { RouterLink } from '@/routes/components';
+
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
@@ -7,15 +14,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { usePathname } from 'src/routes/hooks';
-import { RouterLink } from 'src/routes/components';
-
-import { _socials } from 'src/_mock';
-
-import Logo from 'src/components/logo';
-import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

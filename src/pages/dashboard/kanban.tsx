@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { KanbanView } from 'src/sections/kanban/view';
+import { KanbanView } from '@/sections/kanban/view';
 
 // ----------------------------------------------------------------------
 

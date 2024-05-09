@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { SupabaseForgotPasswordView } from 'src/sections/auth/supabase';
+import { SupabaseForgotPasswordView } from '@/sections/auth/supabase';
 
 // ----------------------------------------------------------------------
 

@@ -1,13 +1,11 @@
 import Map from 'react-map-gl';
 import { useState } from 'react';
+import Iconify from '@/components/iconify';
+import { MAPBOX_API } from '@/config-global';
+import { MapPopup, MapMarker, MapControl } from '@/components/map';
 
 import Typography from '@mui/material/Typography';
 import { styled, useTheme } from '@mui/material/styles';
-
-import { MAPBOX_API } from 'src/config-global';
-
-import Iconify from 'src/components/iconify';
-import { MapPopup, MapMarker, MapControl } from 'src/components/map';
 
 // ----------------------------------------------------------------------
 

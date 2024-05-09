@@ -1,17 +1,15 @@
+import Image from '@/components/image';
+import Iconify from '@/components/iconify';
+import { fDate } from '@/utils/format-time';
+import { IUserProfileGallery } from '@/types/user';
+import Lightbox, { useLightBox } from '@/components/lightbox';
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
 import { alpha, useTheme } from '@mui/material/styles';
-
-import { fDate } from 'src/utils/format-time';
-
-import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
-import Lightbox, { useLightBox } from 'src/components/lightbox';
-
-import { IUserProfileGallery } from 'src/types/user';
 
 // ----------------------------------------------------------------------
 
@@ -78,9 +76,8 @@ export default function ProfileGallery({ gallery }: Props) {
               ratio="1/1"
               src={image.imageUrl}
               onClick={() => lightbox.onOpen(image.imageUrl)}
-              overlay={`linear-gradient(to bottom, ${alpha(theme.palette.grey[900], 0)} 0%, ${
-                theme.palette.grey[900]
-              } 75%)`}
+              overlay={`linear-gradient(to bottom, ${alpha(theme.palette.grey[900], 0)} 0%, ${theme.palette.grey[900]
+                } 75%)`}
             />
           </Card>
         ))}

@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { PostListHomeView } from 'src/sections/blog/view';
+import { PostListHomeView } from '@/sections/blog/view';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,5 @@
 import { Amplify } from 'aws-amplify';
+import { AMPLIFY_API } from '@/config-global';
 import { useMemo, useEffect, useReducer, useCallback } from 'react';
 import {
   signIn,
@@ -12,8 +13,6 @@ import {
   fetchUserAttributes,
   confirmResetPassword,
 } from 'aws-amplify/auth';
-
-import { AMPLIFY_API } from 'src/config-global';
 
 import { AuthContext } from './auth-context';
 import { AuthUserType, ActionMapType, AuthStateType } from '../../types';

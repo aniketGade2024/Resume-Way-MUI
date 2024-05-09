@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { CalendarView } from 'src/sections/calendar/view';
+import { CalendarView } from '@/sections/calendar/view';
 
 // ----------------------------------------------------------------------
 

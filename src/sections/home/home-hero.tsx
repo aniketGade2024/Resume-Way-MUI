@@ -1,4 +1,11 @@
+import { paths } from '@/routes/paths';
+import Iconify from '@/components/iconify';
 import { m, useScroll } from 'framer-motion';
+import { RouterLink } from '@/routes/components';
+import { HEADER } from '@/layouts/config-layout';
+import { useResponsive } from '@/hooks/use-responsive';
+import { bgBlur, bgGradient, textGradient } from '@/theme/css';
+import { varFade, MotionContainer } from '@/components/animate';
 import { useRef, useState, useEffect, useCallback } from 'react';
 
 import Box from '@mui/material/Box';
@@ -10,17 +17,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { alpha, styled, useTheme } from '@mui/material/styles';
-
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
-
-import { useResponsive } from 'src/hooks/use-responsive';
-
-import { HEADER } from 'src/layouts/config-layout';
-import { bgBlur, bgGradient, textGradient } from 'src/theme/css';
-
-import Iconify from 'src/components/iconify';
-import { varFade, MotionContainer } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 

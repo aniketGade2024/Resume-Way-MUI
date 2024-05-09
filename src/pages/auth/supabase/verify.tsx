@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { SupabaseVerifyView } from 'src/sections/auth/supabase';
+import { SupabaseVerifyView } from '@/sections/auth/supabase';
 
 // ----------------------------------------------------------------------
 

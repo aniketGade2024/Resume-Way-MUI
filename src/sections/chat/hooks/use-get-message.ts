@@ -1,4 +1,4 @@
-import { IChatMessage, IChatParticipant } from 'src/types/chat';
+import { IChatMessage, IChatParticipant } from '@/types/chat';
 
 // ----------------------------------------------------------------------
 
@@ -14,12 +14,12 @@ export default function useGetMessage({ message, participants, currentUserId }: 
   const senderDetails =
     message.senderId === currentUserId
       ? {
-          type: 'me',
-        }
+        type: 'me',
+      }
       : {
-          avatarUrl: sender?.avatarUrl,
-          firstName: sender?.name.split(' ')[0],
-        };
+        avatarUrl: sender?.avatarUrl,
+        firstName: sender?.name.split(' ')[0],
+      };
 
   const me = senderDetails.type === 'me';
 

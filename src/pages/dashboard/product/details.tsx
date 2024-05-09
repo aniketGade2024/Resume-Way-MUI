@@ -1,8 +1,6 @@
+import { useParams } from '@/routes/hooks';
 import { Helmet } from 'react-helmet-async';
-
-import { useParams } from 'src/routes/hooks';
-
-import { ProductDetailsView } from 'src/sections/product/view';
+import { ProductDetailsView } from '@/sections/product/view';
 
 // ----------------------------------------------------------------------
 

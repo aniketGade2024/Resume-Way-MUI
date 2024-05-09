@@ -1,7 +1,17 @@
 import * as Yup from 'yup';
 import { useCallback } from 'react';
 import { useForm } from 'react-hook-form';
+import { countries } from '@/assets/data';
+import { fData } from '@/utils/format-number';
+import { useSnackbar } from '@/components/snackbar';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useMockedUser } from '@/hooks/use-mocked-user';
+import FormProvider, {
+  RHFSwitch,
+  RHFTextField,
+  RHFUploadAvatar,
+  RHFAutocomplete,
+} from '@/components/hook-form';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -10,20 +20,6 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
-
-import { useMockedUser } from 'src/hooks/use-mocked-user';
-
-import { fData } from 'src/utils/format-number';
-
-import { countries } from 'src/assets/data';
-
-import { useSnackbar } from 'src/components/snackbar';
-import FormProvider, {
-  RHFSwitch,
-  RHFTextField,
-  RHFUploadAvatar,
-  RHFAutocomplete,
-} from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

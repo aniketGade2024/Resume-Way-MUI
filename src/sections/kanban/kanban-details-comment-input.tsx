@@ -1,13 +1,12 @@
+import Iconify from '@/components/iconify';
+import { useMockedUser } from '@/hooks/use-mocked-user';
+
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
-
-import { useMockedUser } from 'src/hooks/use-mocked-user';
-
-import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

@@ -1,3 +1,4 @@
+import { IMail } from '@/types/mail';
 import { formatDistanceToNowStrict } from 'date-fns';
 
 import Box from '@mui/material/Box';
@@ -6,8 +7,6 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton, { ListItemButtonProps } from '@mui/material/ListItemButton';
-
-import { IMail } from 'src/types/mail';
 
 // ----------------------------------------------------------------------
 

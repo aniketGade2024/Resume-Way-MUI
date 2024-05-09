@@ -1,12 +1,12 @@
+import Image from '@/components/image';
+import Carousel, { useCarousel, CarouselDots } from '@/components/carousel';
+
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import Card, { CardProps } from '@mui/material/Card';
 import { alpha, useTheme } from '@mui/material/styles';
-
-import Image from 'src/components/image';
-import Carousel, { useCarousel, CarouselDots } from 'src/components/carousel';
 
 // ----------------------------------------------------------------------
 
@@ -60,9 +60,8 @@ function CarouselItem({ item }: CarouselItemProps) {
     <Image
       alt={name}
       src={coverUrl}
-      overlay={`linear-gradient(to bottom, ${alpha(theme.palette.grey[900], 0)} 0%, ${
-        theme.palette.grey[900]
-      } 75%)`}
+      overlay={`linear-gradient(to bottom, ${alpha(theme.palette.grey[900], 0)} 0%, ${theme.palette.grey[900]
+        } 75%)`}
       sx={{
         width: 1,
         height: { xs: 280, xl: 320 },

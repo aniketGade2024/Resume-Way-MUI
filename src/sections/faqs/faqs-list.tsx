@@ -1,11 +1,10 @@
+import { _faqs } from '@/_mock';
+import Iconify from '@/components/iconify';
+
 import Accordion from '@mui/material/Accordion';
 import Typography from '@mui/material/Typography';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-
-import { _faqs } from 'src/_mock';
-
-import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

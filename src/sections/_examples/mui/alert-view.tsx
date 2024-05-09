@@ -1,15 +1,13 @@
+import { paths } from '@/routes/paths';
+import CustomBreadcrumbs from '@/components/custom-breadcrumbs';
+import ComponentHero from '@/sections/_examples/component-hero';
+
 import Masonry from '@mui/lab/Masonry';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import { alpha } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import AlertTitle from '@mui/material/AlertTitle';
-
-import { paths } from 'src/routes/paths';
-
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
-
-import ComponentHero from 'src/sections/_examples/component-hero';
 
 import ComponentBlock from '../component-block';
 
@@ -40,7 +38,7 @@ export default function AlertView() {
         <Masonry columns={{ xs: 1, sm: 2 }} spacing={3}>
           <ComponentBlock title="Standard">
             {COLORS.map((color) => (
-              <Alert key={color} severity={color} onClose={() => {}} sx={{ width: 1 }}>
+              <Alert key={color} severity={color} onClose={() => { }} sx={{ width: 1 }}>
                 This is an {color} alert — check it out!
               </Alert>
             ))}
@@ -52,7 +50,7 @@ export default function AlertView() {
                 key={color}
                 severity={color}
                 variant="filled"
-                onClose={() => {}}
+                onClose={() => { }}
                 sx={{ width: 1 }}
               >
                 This is an {color} alert — check it out!
@@ -66,7 +64,7 @@ export default function AlertView() {
                 key={color}
                 severity={color}
                 variant="outlined"
-                onClose={() => {}}
+                onClose={() => { }}
                 sx={{ width: 1 }}
               >
                 This is an {color} alert — check it out!
@@ -76,7 +74,7 @@ export default function AlertView() {
 
           <ComponentBlock title="Description">
             {COLORS.map((color) => (
-              <Alert key={color} severity={color} onClose={() => {}} sx={{ width: 1 }}>
+              <Alert key={color} severity={color} onClose={() => { }} sx={{ width: 1 }}>
                 <AlertTitle sx={{ textTransform: 'capitalize' }}> {color} </AlertTitle>
                 This is an {color} alert — <strong>check it out!</strong>
               </Alert>

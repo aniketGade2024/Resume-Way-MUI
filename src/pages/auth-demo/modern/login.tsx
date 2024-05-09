@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { ModernLoginView } from 'src/sections/auth-demo/modern';
+import { ModernLoginView } from '@/sections/auth-demo/modern';
 
 // ----------------------------------------------------------------------
 

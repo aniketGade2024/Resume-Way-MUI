@@ -1,10 +1,8 @@
 import { useMemo } from 'react';
+import { IInvoice } from '@/types/invoice';
+import { fDate } from '@/utils/format-time';
+import { fCurrency } from '@/utils/format-number';
 import { Page, View, Text, Font, Image, Document, StyleSheet } from '@react-pdf/renderer';
-
-import { fDate } from 'src/utils/format-time';
-import { fCurrency } from 'src/utils/format-number';
-
-import { IInvoice } from 'src/types/invoice';
 
 // ----------------------------------------------------------------------
 

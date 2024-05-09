@@ -1,10 +1,9 @@
 import { forwardRef } from 'react';
+import { RouterLink } from '@/routes/components';
 
 import Link from '@mui/material/Link';
 import { useTheme } from '@mui/material/styles';
 import Box, { BoxProps } from '@mui/material/Box';
-
-import { RouterLink } from 'src/routes/components';
 
 // ----------------------------------------------------------------------
 

@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import { ShadowsView } from 'src/sections/_examples/foundation';
+import { ShadowsView } from '@/sections/_examples/foundation';
 
 // ----------------------------------------------------------------------
 

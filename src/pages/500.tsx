@@ -1,6 +1,5 @@
+import { View500 } from '@/sections/error';
 import { Helmet } from 'react-helmet-async';
-
-import { View500 } from 'src/sections/error';
 
 // ----------------------------------------------------------------------
 

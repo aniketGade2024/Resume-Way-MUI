@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-
-import TextfieldView from 'src/sections/_examples/mui/textfield-view';
+import TextfieldView from '@/sections/_examples/mui/textfield-view';
 
 // ----------------------------------------------------------------------
 

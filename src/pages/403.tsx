@@ -1,6 +1,5 @@
+import { View403 } from '@/sections/error';
 import { Helmet } from 'react-helmet-async';
-
-import { View403 } from 'src/sections/error';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,9 @@
 import { useState } from 'react';
+import { paths } from '@/routes/paths';
+import { countries } from '@/assets/data';
+import CountrySelect from '@/components/country-select';
+import CustomBreadcrumbs from '@/components/custom-breadcrumbs';
+import ComponentHero from '@/sections/_examples/component-hero';
 
 import Chip from '@mui/material/Chip';
 import Masonry from '@mui/lab/Masonry';
@@ -7,15 +12,6 @@ import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Autocomplete from '@mui/material/Autocomplete';
-
-import { paths } from 'src/routes/paths';
-
-import { countries } from 'src/assets/data';
-
-import CountrySelect from 'src/components/country-select';
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
-
-import ComponentHero from 'src/sections/_examples/component-hero';
 
 import ComponentBlock from '../component-block';
 
@@ -109,9 +105,8 @@ export default function AutocompleteView() {
               )}
             />
 
-            <Typography variant="body2">{`value: ${
-              value !== null ? `'${value}'` : 'null'
-            }`}</Typography>
+            <Typography variant="body2">{`value: ${value !== null ? `'${value}'` : 'null'
+              }`}</Typography>
 
             <Typography variant="body2">{`inputValue: '${inputValue}'`}</Typography>
           </ComponentBlock>

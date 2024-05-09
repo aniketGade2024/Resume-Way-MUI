@@ -1,14 +1,13 @@
+import { paths } from '@/routes/paths';
+import Iconify from '@/components/iconify';
+import { RouterLink } from '@/routes/components';
+import EmptyContent from '@/components/empty-content';
+
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
-
-import Iconify from 'src/components/iconify';
-import EmptyContent from 'src/components/empty-content';
 
 import { useCheckoutContext } from './context';
 import CheckoutSummary from './checkout-summary';
